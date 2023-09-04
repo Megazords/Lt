@@ -1,0 +1,42 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["standard-with-typescript", "plugin:react/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier",
+    "unused-imports",
+    "jsx-a11y",
+    "security"
+  ],
+  "rules": {
+    "absolute-imports/only-absolute-imports": "error",
+    "eslint-comments/disable-enable-pair": ["error"],
+    "key-spacing": "off",
+    "no-console": "warn",
+    "prettier/prettier": "error",
+    "@typescript-eslint/strict-boolean-expressions": 0,
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        "checksVoidReturn": false
+      }
+    ],
+    "@typescript-eslint/key-spacing": "off",
+    "@typescript-eslint/no-dynamic-delete": 0,
+    "@typescript-eslint/no-unused-vars": 2
+  }
+}
