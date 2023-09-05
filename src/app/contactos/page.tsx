@@ -1,6 +1,6 @@
 'use client';
 
-import Parallax from '@/components/parallax';
+import Parallax from '../../components/Parallax';
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 
 const Home: React.FunctionComponent = () => {
