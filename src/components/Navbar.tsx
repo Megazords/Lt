@@ -1,11 +1,10 @@
 'use client';
-import { SearchIcon } from '@chakra-ui/icons';
-import { Box, Flex, Icon, Image, Link, Text } from '@chakra-ui/react';
-import { GrSearch } from 'react-icons/gr';
+import { Flex, Image, Link, Text } from '@chakra-ui/react';
 
 const Navbar: React.FunctionComponent = () => {
   return (
     <Flex
+      textShadow="0px 0px 2px rgba(0,0,0,1)"
       color="white"
       width="100vw"
       position="fixed"
@@ -36,8 +35,6 @@ const Navbar: React.FunctionComponent = () => {
         <Link href="/contactos">
           <Text fontFamily="Montserrat">Contactos</Text>
         </Link>
-
-        <SearchIcon></SearchIcon>
       </Flex>
     </Flex>
   );
