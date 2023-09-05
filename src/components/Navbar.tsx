@@ -1,6 +1,6 @@
 'use client';
 import { SearchIcon } from '@chakra-ui/icons';
-import { Flex, Icon, Image, Link, Text } from '@chakra-ui/react';
+import { Box, Flex, Icon, Image, Link, Text } from '@chakra-ui/react';
 import { GrSearch } from 'react-icons/gr';
 
 const Navbar: React.FunctionComponent = () => {
