@@ -23,8 +23,8 @@ export default function RootLayout({
         url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
       </style>
       <Navbar></Navbar>
-      <Footer></Footer>
       <body className={inter.className}>{children}</body>
+      <Footer></Footer>
     </html>
   );
 }
