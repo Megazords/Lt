@@ -24,9 +24,6 @@ const Home: React.FunctionComponent = () => {
       <Parallax>
         <Flex
           direction="column"
-          border="20px"
-          padding="16px"
-          borderColor="black"
           height="50vh"
           alignItems="center"
           justifyContent="center"
