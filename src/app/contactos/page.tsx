@@ -17,7 +17,7 @@ const Home: React.FunctionComponent = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.1)', // Adjust the opacity by changing the alpha value (0.5 for 50% opacity), // Ensure the pseudo-element doesn't interfere with interactions
+          backgroundColor: 'rgba(0, 0, 0, 0.1)', //  adjust colors
         }}>
         <Image src="Lt_foto.jpg" objectFit="cover" width="100%"></Image>
       </Box>
