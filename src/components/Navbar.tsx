@@ -4,9 +4,10 @@ import { Flex, Image, Link, Text } from '@chakra-ui/react';
 const Navbar: React.FunctionComponent = () => {
   return (
     <Flex
-      textShadow="0px 0px 2px rgba(0,0,0,1)"
-      color="white"
+      textShadow="0px 0px 1px rgba(0,0,0,0.8)"
+      color="black"
       width="100vw"
+      backgroundColor="white"
       position="fixed"
       top="0"
       alignItems="center"
@@ -22,7 +23,7 @@ const Navbar: React.FunctionComponent = () => {
           luztuna.pt
         </Text>
       </Link>
-      <Flex width="30%" justifyContent="space-evenly">
+      <Flex width="40%" justifyContent="space-evenly">
         <Link href="/">
           <Text fontFamily="Montserrat">Página Inicial</Text>
         </Link>
