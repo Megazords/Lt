@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import Parallax from '../../components/Parallax';
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 
@@ -19,7 +20,7 @@ const Home: React.FunctionComponent = () => {
           height: '100%',
           backgroundColor: 'rgba(0, 0, 0, 0.2)', // Adjust the opacity by changing the alpha value (0.5 for 50% opacity), // Ensure the pseudo-element doesn't interfere with interactions
         }}>
-        <Image src="Lt_foto.jpg" objectFit="cover" width="100%"></Image>
+        <Image src="Lt_foto.jpg" objectFit="cover" width="100%" />
       </Box>
       <Parallax>
         <Flex

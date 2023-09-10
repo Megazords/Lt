@@ -3,28 +3,43 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["standard-with-typescript", "plugin:react/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
     "ecmaVersion": "latest",
     "sourceType": "module",
     "project": "tsconfig.json"
   },
   "plugins": [
-    "react",
-    "react-hooks",
     "@typescript-eslint",
-    "prettier",
+    "react",
     "unused-imports",
-    "jsx-a11y",
-    "security"
+    "@typescript-eslint",
+    "prettier"
   ],
   "rules": {
-    "absolute-imports/only-absolute-imports": "error",
-    "eslint-comments/disable-enable-pair": ["error"],
+    "react/react-in-jsx-scope": "off",
+    "indent": ["error", 2],
+    "react/no-unescaped-entities": "off",
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
     "key-spacing": "off",
     "no-console": "warn",
     "prettier/prettier": "error",
@@ -37,6 +52,6 @@
     ],
     "@typescript-eslint/key-spacing": "off",
     "@typescript-eslint/no-dynamic-delete": 0,
-    "@typescript-eslint/no-unused-vars": 2
+    "react/self-closing-comp": "error"
   }
 }

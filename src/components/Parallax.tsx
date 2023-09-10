@@ -1,4 +1,3 @@
-import { FilterProps } from '@chakra-ui/react';
 import { useEffect, useRef } from 'react';
 
 interface ParallaxProps {
@@ -14,7 +13,7 @@ const Parallax = ({ children }: ParallaxProps) => {
     if (parallax) {
       const handleScroll = () => {
         const scrollY = window.scrollY;
-        parallax.style.transform = `translateY(-${scrollY * 0.1}px)`; // Adjust the multiplier for the parallax effect
+        parallax.style.transform = `translateY(-${scrollY * 0.1}px)`;
       };
 
       window.addEventListener('scroll', handleScroll);

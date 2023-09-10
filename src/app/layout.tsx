@@ -1,8 +1,8 @@
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,11 +22,11 @@ export default function RootLayout({
         @import
         url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
       </style>
-      <Navbar></Navbar>
+      <Navbar />
       <body style={{ background: 'white' }} className={inter.className}>
         {children}
       </body>
-      <Footer></Footer>
+      <Footer />
     </html>
   );
 }

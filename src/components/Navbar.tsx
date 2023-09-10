@@ -6,7 +6,6 @@ const Navbar: React.FunctionComponent = () => {
     <Flex
       textShadow="0px 0px 1px rgba(0,0,0,0.8)"
       color="black"
-      backgroundColor="white"
       width={['100%', '100%', '800px', '15000px']}
       maxWidth="100%"
       position="fixed"
@@ -15,7 +14,7 @@ const Navbar: React.FunctionComponent = () => {
       padding="1rem"
       justifyContent={['center', 'space-between']}>
       <Link display="flex" alignItems="center" href="/">
-        <Image src="Lt_logo.png" height={['36px', '48px', '56px']}></Image>
+        <Image src="Lt_logo.png" height={['36px', '48px', '56px']} />
         <Text
           fontSize={['18px', '20px', '24px']}
           paddingLeft="12px"
