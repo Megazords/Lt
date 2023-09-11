@@ -4,15 +4,17 @@ import { Flex, Image, Link, Text } from '@chakra-ui/react';
 const Navbar: React.FunctionComponent = () => {
   return (
     <Flex
-      textShadow="0px 0px 1px rgba(0,0,0,0.8)"
       color="black"
-      width={['100%', '100%', '800px', '15000px']}
+      bgColor="white"
+      width="100%"
       maxWidth="100%"
       position="fixed"
       top="0"
       alignItems="center"
       padding="1rem"
-      justifyContent={['center', 'space-between']}>
+      justifyContent={['center', 'space-between']}
+      h="88px"
+      className="navbar">
       <Link display="flex" alignItems="center" href="/">
         <Image src="Lt_logo.png" height={['36px', '48px', '56px']} />
         <Text
@@ -25,8 +27,9 @@ const Navbar: React.FunctionComponent = () => {
       </Link>
       <Flex
         minWidth={['100%', '100%', '400px']}
-        width={['100%', '100%', '40%']}
-        justifyContent={['center', 'space-evenly']}>
+        width={['100%', '100%', '30%']}
+        justifyContent={['center', 'space-evenly']}
+        fontWeight="700">
         <Link href="/">
           <Text fontFamily="Montserrat" margin={['0', '0', '0 5px']}>
             Página Inicial
