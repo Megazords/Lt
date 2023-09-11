@@ -22,8 +22,8 @@ export default function RootLayout({
         @import
         url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
       </style>
-      <Navbar />
       <body style={{ background: 'white' }} className={inter.className}>
+        <Navbar />
         {children}
       </body>
       <Footer />
