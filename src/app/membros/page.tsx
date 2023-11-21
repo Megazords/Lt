@@ -104,11 +104,12 @@ const Membros: React.FunctionComponent = () => {
     ],
     caloiros: [
       'Birotti',
+      'Chatiago',
+      'É de Xira',
       'Jibóia',
       'Musgueira',
       'Salame',
       'Vidrão',
-      'Chatiago',
     ],
   };
   return (
