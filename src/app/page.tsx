@@ -1,6 +1,12 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react';
+'use client';
+
+import { Box, Flex, Image, Text, useMediaQuery } from '@chakra-ui/react';
 
 const Home: React.FunctionComponent = () => {
+  const [isSmallerThan62em] = useMediaQuery('(min-width: 62em)', {
+    ssr: true,
+    fallback: false,
+  });
   return (
     <>
       <Box
@@ -24,16 +30,19 @@ const Home: React.FunctionComponent = () => {
         color="black"
         lineHeight="1.75"
         position="relative">
-        <Image
-          src="lt_logo.jpg"
-          w={['200px', '250px', '300px', '350px', '400px']}
-          pb="1rem"
-          zIndex="1"
-        />
+        {isSmallerThan62em && (
+          <Image
+            src="lt_logo.jpg"
+            w={['200px', '250px', '300px', '350px', '400px']}
+            pb="1rem"
+            zIndex="1"
+          />
+        )}
         <Flex
           direction={['column', 'column', 'column', 'row', 'row']}
           px={['2rem', '4rem']}
-          w="100%">
+          w="100%"
+          align="center">
           <Box h="640px">
             <Image
               w="100%"
@@ -43,6 +52,14 @@ const Home: React.FunctionComponent = () => {
               objectPosition="60% 50%"
             />
           </Box>
+          {!isSmallerThan62em && (
+            <Image
+              src="lt_logo.jpg"
+              w={['200px', '250px', '300px', '350px', '400px']}
+              py="1rem"
+              zIndex="1"
+            />
+          )}
           <Flex
             direction="column"
             alignItems="center"

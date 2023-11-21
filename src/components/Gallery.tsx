@@ -32,6 +32,7 @@ interface Data {
     next: string;
   };
 }
+
 export default function Gallery() {
   const getInstagramData = async () => {
     try {
