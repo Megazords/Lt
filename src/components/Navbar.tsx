@@ -120,7 +120,7 @@ const Navbar: React.FunctionComponent = () => {
                 <Link href="/palmares">
                   <Text>Palmarés</Text>
                 </Link>
-                <Link href="/Membros">
+                <Link href="/membros">
                   <Text>Membros</Text>
                 </Link>
                 <Link href="/contactos">
