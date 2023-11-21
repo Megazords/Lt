@@ -56,7 +56,7 @@ const Navbar: React.FunctionComponent = () => {
           <Link href="/palmares">
             <Text margin={['0', '0', '0 10px']}>Palmarés</Text>
           </Link>
-          <Link href="/Membros">
+          <Link href="/membros">
             <Text margin={['0', '0', '0 10px']}>Membros</Text>
           </Link>
           <Link href="/contactos">
