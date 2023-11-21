@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react';
 import Gallery from '../../components/Gallery';
 
-const Membros: React.FunctionComponent = () => {
+const Galeria: React.FunctionComponent = () => {
   return (
     <Flex
       width="100vw"
@@ -16,4 +16,4 @@ const Membros: React.FunctionComponent = () => {
   );
 };
 
-export default Membros;
+export default Galeria;

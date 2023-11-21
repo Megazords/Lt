@@ -49,7 +49,7 @@ const Footer: React.FunctionComponent = () => {
         paddingBottom="1rem"
         textAlign="center">
         Luz&Tuna - Tuna da Universidade Lusíada de Lisboa - EST. 1994 - SOL
-        LUCET TUNA
+        LUCET TUNAE
       </Text>
     </Flex>
   );
