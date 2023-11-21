@@ -1,11 +1,14 @@
-'use client';
-
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 
 const Home: React.FunctionComponent = () => {
   return (
     <>
-      <Box height="70vh" backgroundColor="black" overflow="hidden" mt="88px">
+      <Box
+        height={['20vh', '30vh', '40vh', '50vh', '60vh']}
+        w="100vw"
+        backgroundColor="black"
+        overflow="hidden"
+        mt="88px">
         <Image
           src="LuzandTuna__Teaser.gif"
           w="100%"
@@ -14,17 +17,24 @@ const Home: React.FunctionComponent = () => {
         />
       </Box>
       <Flex
-        w="100%"
+        w="100vw"
         alignItems="center"
         py="3rem"
         direction="column"
         color="black"
-        fontFamily="Montserrat"
         lineHeight="1.75"
         position="relative">
-        <Image src="Lt_logo.png" w="200px" pb="1rem" />
-        <Flex direction="row" px="4rem">
-          <Box w="832px" h="640px">
+        <Image
+          src="lt_logo.jpg"
+          w={['200px', '250px', '300px', '350px', '400px']}
+          pb="1rem"
+          zIndex="1"
+        />
+        <Flex
+          direction={['column', 'column', 'column', 'row', 'row']}
+          px={['2rem', '4rem']}
+          w="100%">
+          <Box h="640px">
             <Image
               w="100%"
               h="100%"
@@ -33,49 +43,56 @@ const Home: React.FunctionComponent = () => {
               objectPosition="60% 50%"
             />
           </Box>
-          <Flex direction="column" alignItems="center">
-            <Text w="60%" py="7.5px">
-              A Luz&Tuna - Tuna da Universidade Lusíada de Lisboa foi fundada a
-              23 de Setembro de 1994.
+          <Flex
+            direction="column"
+            alignItems="center"
+            textAlign={['left', 'justify', 'justify', 'justify', 'justify']}
+            my={['2rem', '2rem', '', '', '']}>
+            <Text w={['95%', '95%', '95%', '60%', '60%']} py="7.5px">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Luz&Tuna - Tuna da
+              Universidade Lusíada de Lisboa foi fundada a 23 de Setembro de
+              1994.
             </Text>
-            <Text w="60%" py="7.5px">
-              Surge nos "Jardins da Universidade". É constituída em
-              exclusividade por alunos e antigos alunos da nossa Universidade -
-              no entanto, nunca deixou de distinguir como Tunos Honorários,
-              todos aqueles que com reconhecidos méritos souberam dignificar a
-              Lusíada através da sua/nossa Tuna.
+            <Text w={['95%', '95%', '95%', '60%', '60%']} py="7.5px">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surge nos &quot;Jardins
+              da Universidade&quot;. É constituída em exclusividade por alunos e
+              antigos alunos da nossa Universidade - no entanto, nunca deixou de
+              distinguir como Tunos Honorários, todos aqueles que com
+              reconhecidos méritos souberam dignificar a Lusíada através da
+              sua/nossa Tuna.
             </Text>
-            <Text w="60%" py="7.5px">
-              A Luz&Tuna nasceu para fazer Serenatas; para encantar e para
-              actuar pelas Academias em representação da Universidade Lusíada.
-              Entre as mais iniciativas onde tem participado, culturais,
-              académicas e de beneficência, destacam-se, naturalmente, os
-              "Festivais de Tunas", sempre ganhando prémios mas,
-              fundamentalmente, deixando saudades, tanto em Portugal como no
-              mundo.
+            <Text w={['95%', '95%', '95%', '60%', '60%']} py="7.5px">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Luz&Tuna nasceu para
+              fazer Serenatas; para encantar e para actuar pelas Academias em
+              representação da Universidade Lusíada. Entre as mais iniciativas
+              onde tem participado, culturais, académicas e de beneficência,
+              destacam-se, naturalmente, os &quot;Festivais de Tunas&quot;,
+              sempre ganhando prémios mas, fundamentalmente, deixando saudades,
+              tanto em Portugal como no mundo.
             </Text>
-            <Text w="60%" py="7.5px">
-              Na selecção do seu repertório tem havido uma preocupação de um
-              percurso pelas diversas matrizes da música portuguesa,
-              privilegiando-se os temas dos grandes nomes da guitarra e do fado
-              de Lisboa, sem esquecer, os seus próprios originais. Uma variedade
-              e uma riqueza cultural ao nível musical, que tem bases nas mais
-              diversas raízes da música mundial, distinguem a Luz&Tuna pela sua
-              postura, desempenho e dedicação, sem nunca esquecer a sua essência
-              académica.
+            <Text w={['95%', '95%', '95%', '60%', '60%']} py="7.5px">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na selecção do seu
+              repertório tem havido uma preocupação de um percurso pelas
+              diversas matrizes da música portuguesa, privilegiando-se os temas
+              dos grandes nomes da guitarra e do fado de Lisboa, sem esquecer,
+              os seus próprios originais. Uma variedade e uma riqueza cultural
+              ao nível musical, que tem bases nas mais diversas raízes da música
+              mundial, distinguem a Luz&Tuna pela sua postura, desempenho e
+              dedicação, sem nunca esquecer a sua essência académica.
             </Text>
-            <Text w="60%" py="7.5px">
-              Assim, a Luz&Tuna é… "a memória de sons conflituantes de uma
-              Juventude que procura conjugar o rigor de execução com alguns
-              suaves devaneios e desvios que são o tempero de toda a arte, o sal
-              e o sentido da vida. Um pequeno sopro (re)criador sobre tantas e
-              tão belas músicas de sempre".
+            <Text w={['95%', '95%', '95%', '60%', '60%']} py="7.5px">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assim, a Luz&Tuna é…
+              &quot;a memória de sons conflituantes de uma Juventude que procura
+              conjugar o rigor de execução com alguns suaves devaneios e desvios
+              que são o tempero de toda a arte, o sal e o sentido da vida. Um
+              pequeno sopro (re)criador sobre tantas e tão belas músicas de
+              sempre&quot;.
             </Text>
             <Text textAlign="center" w="100%" py="7.5px">
               SOL LUCET TUNAE
             </Text>
           </Flex>
-          <Box w="832px" h="640px">
+          <Box h="640px">
             <Image
               w="100%"
               h="100%"
@@ -85,6 +102,26 @@ const Home: React.FunctionComponent = () => {
             />
           </Box>
         </Flex>
+        {/* <Flex
+          justifyContent="center"
+          align="center"
+          flexDirection="column"
+          margin="0 8rem">
+          <Box>TUNOS</Box>
+          Aderente Adónis Africander Amiba Apache Arquiteto Atleta Bico Bilé
+          Bolha Bruno Alves Calado Carapinha Caroço Castratti Catraia Charlão
+          Chiclete Codeas Cristina Caras Lindas Dalai D&aposArtagnan Eco El
+          Marranero Enrabadão Escafiado Estevão Fausto Felps Fernandinho Filho
+          de Maput Fivel Francisco Matos Gipa Gordini Granada Hassan Heavy Jonas
+          Lameiras Lopes de Almeida Manozarra Martins Medeiros Megazord Meias
+          Mokambo Mónica Mosca Mr. Bean Naveia Negativo Nelson Nozes O&aposNeill
+          Pacma Palmelão Pastel Patilhas Peixinho Pepe Pepe Dux Peter Pan
+          Pintelho Pipinho Pipoca Pistolas Piu-Piu Poly Pombo Preto PrimaDonna
+          Psicopata Queixadas Roberto Rocky Rodas Rottweiler Sandocha Silêncio
+          Slimani Sodré Sousa Splinter T22 Tedy Teves Tó Zé Tomate Travolta
+          Tripas Tuto Vinagre Xaps Xica Zé Bubau Zé de Maria Zé João CALOIROS
+          Birotti Jibóia Musgueira Salame Vidrão
+        </Flex> */}
       </Flex>
     </>
   );

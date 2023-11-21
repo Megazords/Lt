@@ -1,44 +1,32 @@
-'use client';
-
-import React from 'react';
-import Parallax from '../../components/Parallax';
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
+import React from 'react';
 
-const Home: React.FunctionComponent = () => {
+const Contactos: React.FunctionComponent = () => {
   return (
     <>
       <Box
-        height="33vh"
+        mt="88px"
+        height={['20vh', '30vh', '40vh', '50vh', '60vh']}
         width="100%"
-        overflow="hidden"
-        _after={{
-          content: '""',
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.1)', //  adjust colors
-        }}>
-        <Image src="Lt_foto.jpg" objectFit="cover" width="100%" />
+        overflow="hidden">
+        <Image src="lusiada.png" objectFit="cover" width="100%" />
       </Box>
-      <Parallax>
-        <Flex
-          direction="column"
-          height="50vh"
-          alignItems="center"
-          justifyContent="center"
-          backgroundColor="white">
-          <Text fontFamily="Montserrat" padding="0 0 1rem 0" color="black">
-            963 330 001
-          </Text>
-          <Text fontFamily="Montserrat" color="black">
-            luz.tuna@gmail.com
-          </Text>
-        </Flex>
-      </Parallax>
+      <Flex
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+        backgroundColor="white"
+        my={['2rem', '2rem', '4rem', '4rem', '4rem']}>
+        <Text padding="0 0 0.5rem 0" color="black">
+          Tomás &quot;Slimani&quot; Silva, Magister Tunae:
+        </Text>
+        <Text padding="0 0 1rem 0" color="black">
+          968 742 583
+        </Text>
+        <Text color="black">luz.tuna@gmail.com</Text>
+      </Flex>
     </>
   );
 };
 
-export default Home;
+export default Contactos;
