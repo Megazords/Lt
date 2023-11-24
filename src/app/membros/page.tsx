@@ -79,6 +79,7 @@ const Membros: React.FunctionComponent = () => {
       'Roberto',
       'Rocky',
       'Rodas',
+      'Rogério',
       'Rottweiler',
       'Sandocha',
       'Silêncio',
@@ -92,7 +93,6 @@ const Membros: React.FunctionComponent = () => {
       'Tó Zé',
       'Tomate',
       'Travolta',
-      'Tripas',
       'Tuto',
       'Vinagre',
       'Xaps',
@@ -162,7 +162,7 @@ const Membros: React.FunctionComponent = () => {
           gridColumnGap={['2px', '4px', '4px', '4px', '4px', '4px']}
           gridRowGap={['2px', '4px', '4px', '4px', '4px', '4px']}>
           {membros.tunos.map((item, index) => (
-            <GridItem key={index}>
+            <GridItem key={index} mr="1rem">
               <Text>{item}</Text>
             </GridItem>
           ))}

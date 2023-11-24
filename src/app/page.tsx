@@ -67,7 +67,7 @@ const Home: React.FunctionComponent = () => {
             my={['2rem', '2rem', '', '', '']}>
             <Text w={['95%', '95%', '95%', '60%', '60%']} py="7.5px">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Luz&Tuna - Tuna da
-              Universidade Lusíada de Lisboa foi fundada a 23 de Setembro de
+              Universidade Lusíada de Lisboa foi fundada a 24 de Novembro de
               1994.
             </Text>
             <Text w={['95%', '95%', '95%', '60%', '60%']} py="7.5px">
