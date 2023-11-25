@@ -67,29 +67,32 @@ const Home: React.FunctionComponent = () => {
             my={['2rem', '2rem', '', '', '']}>
             <Text w={['95%', '95%', '95%', '60%', '60%']} py="7.5px">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Luz&Tuna - Tuna da
-              Universidade Lusíada de Lisboa foi fundada a 24 de Novembro de
+              Universidade Lusíada de Lisboa, foi fundada a 24 de Novembro de
               1994.
             </Text>
             <Text w={['95%', '95%', '95%', '60%', '60%']} py="7.5px">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surge nos &quot;Jardins
-              da Universidade&quot;. É constituída em exclusividade por alunos e
-              antigos alunos da nossa Universidade - no entanto, nunca deixou de
-              distinguir como Tunos Honorários, todos aqueles que com
+              da Universidade&quot; e é constituída em exclusividade por alunos
+              e antigos alunos da nossa Universidade, no entanto, nunca deixou
+              de distinguir como Tunos Honorários, todos aqueles que com
               reconhecidos méritos souberam dignificar a Lusíada através da
               sua/nossa Tuna.
             </Text>
             <Text w={['95%', '95%', '95%', '60%', '60%']} py="7.5px">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Luz&Tuna nasceu para
-              fazer Serenatas; para encantar e para actuar pelas Academias em
-              representação da Universidade Lusíada. Entre as mais iniciativas
-              onde tem participado, culturais, académicas e de beneficência,
-              destacam-se, naturalmente, os &quot;Festivais de Tunas&quot;,
-              sempre ganhando prémios mas, fundamentalmente, deixando saudades,
-              tanto em Portugal como no mundo.
+              fazer serenatas, para encantar e para actuar pelas academias de
+              todo o pais em representação da Universidade Lusíada de Lisboa.
+              Entre as demais iniciativas onde tem participado, sejam estas
+              culturais, académicas ou de beneficência, destacam-se,
+              naturalmente, os &quot;Festivais de Tunas&quot; sempre ganhando
+              prémios, mas fundamentalmente, deixando saudades, tanto em
+              Portugal como em Espanha, França e nas Américas, onde ao longo dos
+              anos têm encantado e representando com dignidade o fenómeno
+              tuneril.
             </Text>
             <Text w={['95%', '95%', '95%', '60%', '60%']} py="7.5px">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na selecção do seu
-              repertório tem havido uma preocupação de um percurso pelas
+              repertório tem havido uma preocupação em trilhar um percurso pelas
               diversas matrizes da música portuguesa, privilegiando-se os temas
               dos grandes nomes da guitarra e do fado de Lisboa, sem esquecer,
               os seus próprios originais. Uma variedade e uma riqueza cultural
