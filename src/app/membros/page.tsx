@@ -52,7 +52,7 @@ const Membros: React.FunctionComponent = () => {
       'Mónica',
       'Mosca',
       'Mr. Bean',
-      'Naveia',
+      'NaVeia',
       'Negativo',
       'Nelson',
       'Nozes',
