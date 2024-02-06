@@ -33,12 +33,33 @@ interface Data {
   };
 }
 
+type Token = {
+  access_token: string;
+  token_type: string;
+  expires_in: number;
+};
+
 export default function Gallery() {
   const getInstagramData = async () => {
     try {
       setLoading(true);
-      const url =
-        'https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=IGQWRPRE45cUlpNW8taU5CaTYxb3hSRzRIY3J1R0R5ZAkxlQ1Jld3g4SmRWdXo4dnNRQXhXclNTbjZAMRkNuNEQ2QUVUeWR4NlpGQUJiQklyMjRaeUMwemxxVHNwdF9iVm9iM2ZARaWNWNWlMeUZA5QldvTFFwT3ZAqTUEZD';
+      const tokenRequest =
+        'https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=IGQWRPdndBOUZAiQ3ZAWZAzc5VFRReGxLb29RMkluelVsZAk9wYTNsNVZAZALUlTZAVB4cTlieDhlS2M1QVZAMc19wSV9rZAm1MTW56UDNXNkJuaUZA5WnJ6Skx3T19mRUUtYkNPUENrcmpxam15ZADNZAV1ktRS1ucXFyTWdYTFUZD';
+
+      const token: Promise<Token> = fetch(tokenRequest, {
+        next: { revalidate: 3600 },
+      }).then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch token');
+        }
+        return response.json() as Promise<Token>;
+      });
+
+      console.log((await token).access_token);
+
+      const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${
+        (await token).access_token
+      }`;
 
       const response = await fetch(url, { next: { revalidate: 3600 } });
 
