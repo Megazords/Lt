@@ -17,13 +17,25 @@ const Contactos: React.FunctionComponent = () => {
         justifyContent="center"
         backgroundColor="white"
         my={['2rem', '2rem', '4rem', '4rem', '4rem']}>
-        <Text padding="0 0 0.5rem 0" color="black">
+        <Text color="black" fontWeight="bold">
           Tomás &quot;Slimani&quot; Silva, Magister Tunae:
         </Text>
-        <Text padding="0 0 1rem 0" color="black">
-          968 742 583
-        </Text>
+        <Text color="black">968 742 583</Text>
         <Text color="black">luz.tuna@gmail.com</Text>
+        <Flex
+          width={['70%', '50%', '50%', '50%', '25%']}
+          align="center"
+          justify="space-between"
+          mt="2rem">
+          <Image
+            src="qrcodewhatsapp.png"
+            objectFit="cover"
+            width={['100px', '150px', '150px', '200px', '200px']}
+          />
+          <Text color="black" fontWeight="bold">
+            Junta-te a nós!
+          </Text>
+        </Flex>
       </Flex>
     </>
   );

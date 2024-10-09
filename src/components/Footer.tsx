@@ -1,7 +1,12 @@
 'use client';
 
 import { Flex, Icon, Link, Text } from '@chakra-ui/react';
-import { AiFillFacebook, AiFillInstagram, AiFillYoutube } from 'react-icons/ai';
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillYoutube,
+  AiFillSpotify,
+} from 'react-icons/ai';
 
 const Footer: React.FunctionComponent = () => {
   return (
@@ -41,6 +46,13 @@ const Footer: React.FunctionComponent = () => {
           w={['30px', '30px', '30px', '40px', '40px']}
           h={['30px', '30px', '30px', '40px', '40px']}>
           <Icon as={AiFillYoutube} color="white" w="100%" h="100%" />
+        </Link>
+        <Link
+          href="https://open.spotify.com/artist/7nndznNEx5Zt9nnBoIs8FP"
+          isExternal
+          w={['30px', '30px', '30px', '40px', '40px']}
+          h={['30px', '30px', '30px', '40px', '40px']}>
+          <Icon as={AiFillSpotify} color="white" w="100%" h="100%" />
         </Link>
       </Flex>
       <Text

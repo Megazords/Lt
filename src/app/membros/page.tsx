@@ -41,6 +41,7 @@ const Membros: React.FunctionComponent = () => {
       'Granada',
       'Hassan',
       'Heavy',
+      'Jibóia',
       'Jonas',
       'Lameiras',
       'Lopes de Almeida',
@@ -102,15 +103,7 @@ const Membros: React.FunctionComponent = () => {
       'Zé de Maria',
       'Zé João',
     ],
-    caloiros: [
-      'Birotti',
-      'Chatiago',
-      'É de Xira',
-      'Jibóia',
-      'Musgueira',
-      'Salame',
-      'Vidrão',
-    ],
+    caloiros: ['Chatiago', 'É de Xira', 'Musgueira', 'Salame', 'Vidrão'],
   };
   return (
     <>
@@ -176,9 +169,9 @@ const Membros: React.FunctionComponent = () => {
           gridTemplateColumns={[
             'repeat(3, 1fr)',
             'repeat(4, 1fr)',
-            'repeat(6, 1fr)',
-            'repeat(6, 1fr)',
-            'repeat(6, 1fr)',
+            'repeat(5, 1fr)',
+            'repeat(5, 1fr)',
+            'repeat(5, 1fr)',
           ]}
           gridTemplateRows={[
             'repeat(1, 1fr)',
